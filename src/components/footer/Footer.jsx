@@ -17,8 +17,8 @@ const Footer = () => {
         <ul className="menuItems">
           <li className="menuItem">Terms Of Use</li>
           <li className="menuItem">Privacy-Policy</li>
-          <a style={{ color: "white",textDecoration:"none" }} href="https://vaibhav-more-portfolio-site.netlify.app/"><li  className="menuItem">About</li></a>
-          <a style={{ color: "white", textDecoration: "none" }} href="https://medium.com/@vaibhavmore24051997"><li className="menuItem">Blog</li></a>
+          <a style={{ color: "white",textDecoration:"none" }} href="https://veeranna98.github.io/Portfolio-Project/"><li  className="menuItem">About</li></a>
+          <a style={{ color: "white", textDecoration: "none" }} href="https://veeranna98.github.io/fbook/"><li className="menuItem">Blog</li></a>
           <li className="menuItem">FAQ</li>
         </ul>
         <div className="infoText">
@@ -26,19 +26,19 @@ const Footer = () => {
         </div>
         <div className="socialIcons">
           <span className="icon">
-            <a style={{ color: "white" }} href="https://github.com/mvaibhav131"><FaGithub /></a>
+            <a style={{ color: "white" }} href="https://github.com/Veeranna98?tab=repositories"><FaGithub /></a>
           </span>
           <span className="icon">
-            <a style={{ color: "white" }} href="https://gitlab.com/mvaibhav131"><FaGitlab /></a> 
+            <a style={{ color: "white" }} href="https://github.com/veeranna463"><FaGitlab /></a> 
           </span>
-          <span className="icon">
+          {/* <span className="icon">
             <a style={{ color: "white" }} href="https://www.instagram.com/vaibhavmore1997/"><FaInstagram /></a> 
-          </span>
-          <span className="icon">
+          </span> */}
+          {/* <span className="icon">
             <a style={{ color: "white" }} href="https://twitter.com/mvaibhav131"><FaTwitter /></a> 
-          </span>
+          </span> */}
           <span className="icon">
-            <a style={{ color: "white" }} href="https://www.linkedin.com/in/vaibhav131/"><FaLinkedin /></a> 
+            <a style={{ color: "white" }} href="https://www.linkedin.com/in/v4a26792b0"><FaLinkedin /></a> 
           </span>
         </div>
       </ContentWrapper>
