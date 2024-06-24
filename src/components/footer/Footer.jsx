@@ -17,8 +17,8 @@ const Footer = () => {
         <ul className="menuItems">
           <li className="menuItem">Terms Of Use</li>
           <li className="menuItem">Privacy-Policy</li>
-          <a style={{ color: "white",textDecoration:"none" }} href="https://veeranna98.github.io/Portfolio-Project/"><li  className="menuItem">About</li></a>
-          <a style={{ color: "white", textDecoration: "none" }} href="https://veeranna98.github.io/fbook/"><li className="menuItem">Blog</li></a>
+          <a style={{ color: "red",textDecoration:"none" }} href="https://veeranna98.github.io/Portfolio-Project/"><li  className="menuItem">About</li></a>
+          {/* <a style={{ color: "red", textDecoration: "none" }} href="https://veeranna98.github.io/fbook/"><li className="menuItem">Blog</li></a> */}
           <li className="menuItem">FAQ</li>
         </ul>
         <div className="infoText">
@@ -38,7 +38,7 @@ const Footer = () => {
             <a style={{ color: "white" }} href="https://twitter.com/mvaibhav131"><FaTwitter /></a> 
           </span> */}
           <span className="icon">
-            <a style={{ color: "white" }} href="https://www.linkedin.com/in/v4a26792b0"><FaLinkedin /></a> 
+            <a style={{ color: "white" }} href="https://www.linkedin.com/"><FaLinkedin /></a> 
           </span>
         </div>
       </ContentWrapper>

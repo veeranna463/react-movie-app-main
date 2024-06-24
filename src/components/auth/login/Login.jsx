@@ -55,7 +55,7 @@ const Login = () => {
                             Don't have an account?
                             <Link className="toggle-link" onClick={handleToggle} to={"/register"}>
                                 {/* {login ? 'Register here' : 'Login here'} */}
-                                Register here
+  -                              Register here
                             </Link>
                         </p>
                     </div>

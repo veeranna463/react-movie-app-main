@@ -2,23 +2,25 @@
 
 .header {
     position: fixed;
-    top:0;
+    top: 0;
     transform: translateY(0);
     width: 100%;
     height: 60px;
-    z-index: 1;
+    z-index: 2; /* Use z-index once */
     display: flex;
     align-items: center;
     transition: all ease 0.5s;
-    z-index: 2;
+
     &.top {
-        background: rgba(24, 24, 216, 0.25);
+        background: rgba(9, 171, 58, 0.25);
         backdrop-filter: blur(3.5px);
         -webkit-backdrop-filter: blur(3.5px);
     }
+
     &.show {
-        background-color: var(--red3);
+        background-color: var(--red3); /* Assuming --red3 is defined elsewhere */
     }
+
     &.hide {
         transform: translateY(-60px);
     }
@@ -27,24 +29,29 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        width: 100%; /* Added width */
     }
+
     .logo {
         cursor: pointer;
         img {
             position: absolute;
-            top:22px;
-            left:-20px;
+            top: 22px;
+            left: -20px;
             width: 60px;
             height: 50px;
         }
     }
+
     .menuItems {
         list-style-type: none;
-        display: none;
+        display: flex;
         align-items: center;
+
         @include md {
             display: flex;
         }
+
         .menuItem {
             height: 60px;
             display: flex;
@@ -53,13 +60,17 @@
             color: rgb(199, 21, 21);
             font-weight: 500;
             position: relative;
+
             &.searchIcon {
                 margin-right: 0;
             }
+
             svg {
                 font-size: 18px;
             }
+
             cursor: pointer;
+
             &:hover {
                 color: rgb(117, 27, 212);
             }
@@ -70,10 +81,12 @@
         display: flex;
         align-items: center;
         gap: 20px;
-        margin:56px;
+        margin: 56px;
+
         @include md {
             display: none;
         }
+
         svg {
             font-size: 18px;
             color: white;
@@ -82,26 +95,28 @@
 
     &.mobileView {
         background: rgb(2, 40, 255);
+
         .menuItems {
             display: flex;
             position: absolute;
             top: 60px;
-            left:0;
+            left: 0;
             background: rgb(96, 91, 248);
             flex-direction: column;
             width: 100%;
             padding: 20px 0;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            border-top: 1px solid rgba(121, 208, 15, 0.674);
             animation: mobileMenu 0.3s ease forwards;
+
             .menuItem {
                 font-size: 20px;
                 width: 100%;
-                height: auto;
                 padding: 15px 20px;
                 margin: 0;
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
+
                 &:last-child {
                     display: none;
                 }
@@ -116,18 +131,21 @@
         position: absolute;
         top: 60px;
         animation: mobileMenu 0.3s ease forwards;
+
         .searchInput {
             display: flex;
             align-items: center;
             height: 40px;
             margin-top: 10px;
             width: 100%;
+
             svg {
                 font-size: 20px;
                 flex-shrink: 0;
                 margin-left: 10px;
                 cursor: pointer;
             }
+
             input {
                 width: 100%;
                 height: 50px;
@@ -137,6 +155,7 @@
                 border-radius: 30px 0 0 30px;
                 padding: 0 15px;
                 font-size: 14px;
+
                 @include md {
                     height: 60px;
                     font-size: 20px;
@@ -145,11 +164,10 @@
             }
         }
     }
-}
-.searchBar{
-   .closeIcon{
-    margin:26px
-   }
+
+    .closeIcon {
+        margin: 26px; /* Moved .closeIcon outside .searchBar */
+    }
 }
 
 @keyframes mobileMenu {
